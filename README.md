@@ -8,13 +8,11 @@ Run any shell command in a temporary proxy environment.
 ## Usage
 
 ```shell
-$ viaproxy socks5://127.0.0.1:1080 run \
-    curl -L https://www.google.com
+$ viaproxy socks5://127.0.0.1:1080 run curl -L https://www.google.com
 ```
 
 ```shell
-$ viaproxy http://192.168.1.9:8888 run \
-    psql ...
+$ viaproxy http://192.168.1.9:8888 run psql ...
 ```
 
 ```shell
@@ -26,8 +24,7 @@ $ curl -L https://www.google.com
 Planning:
 
 ```shell
-$ viaproxy ssh://192.168.10.100:22 run \
-    curl -L https://www.google.com
+$ viaproxy ssh://192.168.10.100:22 run curl -L https://www.google.com
 ```
 
 ## Build
