@@ -27,11 +27,15 @@ Planning:
 $ viaproxy ssh://192.168.10.100:22 run curl -L https://www.google.com
 ```
 
-## Build
+## Build && Install
 
-```
+```shell
 $ git submodule update
 $ make -C graftcp
 $ go build
 # make -C graftcp clean
+```
+
+```shell
+$ cp viaproxy /usr/local/bin/
 ```
