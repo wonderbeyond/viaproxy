@@ -27,7 +27,7 @@ Planning:
 $ viaproxy ssh://192.168.10.100:22 run curl -L https://www.google.com
 ```
 
-## Build && Install
+## Build & Install
 
 ```shell
 $ git submodule update
