@@ -14,6 +14,10 @@ jobs:
         goarch: [amd64, arm64]
     steps:
       - uses: actions/checkout@v2
+      - name: Update submodules
+        run: git submodule update
+      - name: Build Deps
+        run: make -C graftcp
       - name: Run tests
         run: go test -v -p=1 -timeout=0 ./...
       - uses: wangyoucao577/go-release-action@v1.24
