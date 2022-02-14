@@ -13,11 +13,10 @@ jobs:
         goos: [linux]
         goarch: [amd64, arm64]
     steps:
-      - uses: actions/checkout@v2
-      - name: Update submodules
-        run: |
-          git submodule init
-          git submodule update
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
       - name: Build Deps
         run: make -C graftcp
       - name: Run tests
