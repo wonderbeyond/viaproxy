@@ -5,6 +5,10 @@ Run any shell command in a temporary proxy environment.
 
 ---
 
+## Install
+
+Get the right binary file from [releases](https://github.com/wonderbeyond/viaproxy/releases) page, place `viaproxy` into system PATH (e.g. `/usr/local/bin`).
+
 ## Usage
 
 ```shell
@@ -39,3 +43,7 @@ $ go build
 ```shell
 $ cp viaproxy /usr/local/bin/
 ```
+
+## Why Not Use Proxychains/Proxychians-ng
+
+See https://github.com/rofl0r/proxychains-ng/issues/199
