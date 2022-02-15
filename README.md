@@ -34,6 +34,7 @@ $ viaproxy ssh://192.168.10.100:22 run curl -L https://www.google.com
 ## Build & Install
 
 ```shell
+$ git submodule init
 $ git submodule update
 $ make -C graftcp
 $ go build
